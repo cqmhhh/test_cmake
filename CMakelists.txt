@@ -16,13 +16,13 @@ set(CMAKE_RUNTIME_OUTPUT_DIRECTORY ${PROJECT_SOURCE_DIR}/bin)
 
 aux_source_directory(${PROJECT_SOURCE_DIR}/src SRC_LIST)
 add_library(
-    comman
+    common
     SHARED
     ${SRC_LIST}
 )
 
 target_include_directories(
-    comman
+    common
     PUBLIC
     ${PROJECT_SOURCE_DIR}/include
 )
